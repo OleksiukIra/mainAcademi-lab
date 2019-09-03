@@ -1,4 +1,34 @@
 tr td, tr th {   
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border-collapse: collapse;
     border: 2px solid gray;
+}
+header{
+    text-align: right;
+    
+}
+input:not(.subscibe ){
+    background-color: burlywood;
+    color:#fff;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+button{
+    background-color: coral;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+.subscibe{
+    height: 20px;
+    width: 150px;
+    margin: 10px;
+    color: darkred;
+}
+.main{
+    border: 4px solid darkred;
+    padding: 10px; 
 }
