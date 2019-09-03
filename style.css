@@ -1,0 +1,4 @@
+tr td, tr th {   
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 2px solid gray;
+}
