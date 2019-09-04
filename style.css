@@ -4,6 +4,7 @@ tr td, tr th {
 }
 header{
     text-align: right;
+    background-color: cornsilk;
     
 }
 input:not(.subscibe ){
@@ -31,4 +32,10 @@ button{
 .main{
     border: 4px solid darkred;
     padding: 10px; 
+}
+footer{
+    background-color: cornsilk;
+}
+p{
+     background-color: bisque;
 }
