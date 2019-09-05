@@ -1,0 +1,11 @@
+header{
+    margin: 15px;
+    background-color: blueviolet;
+}
+header button{
+    color: #ffffff;
+    background-color: darkmagenta;
+    padding: 15px;
+    margin: 15px;
+    margin-right: 8px;
+}
