@@ -1,0 +1,30 @@
+header{
+    margin: 15px;
+    background-color: blueviolet;
+}
+button{
+    color: #ffffff;
+    background-color: darkmagenta;
+    padding: 15px;
+    margin: 15px;
+    margin-right: 20px;
+}
+.wrapper {
+    margin-top: 40px;
+    margin-left: 15px;
+    padding: 15px;
+    background-color: cornflowerblue;
+    width: 350px;
+    display: inline-block;
+}
+.button {
+    width: 45%;
+    padding: 6px;
+    margin-right: 5%;
+    background-color: blue;
+    color: #ffffff;
+    border: 2px solid darkblue;
+    box-sizing: border-box;
+    float: left;
+
+}
