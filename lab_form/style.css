@@ -35,15 +35,32 @@ main {
     padding-top: 60px;
     padding-left: 30px;
 }
+.login_form{
+    position: relative;
+    margin-bottom: 25px;
+}
 .login_form input{
-    width: 80%;
-    height: 50px;
-    padding: 0 5px;
+    width: 90%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid darkgray;
+    padding: 10px o;
     background: transparent;
+    outline: none;
+}
+.login_form label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2px;
     color: gray;
-    font-size: 15px;
-    border-style: none;
-    border-bottom: 2px solid gray;
+    font-size: 14px;
+    transition: .5s;
+}
+.login_form input:focus + label,
+.login_form input:valid + label{
+    top: -30px;
 }
 .login_form a{
     text-decoration: none;

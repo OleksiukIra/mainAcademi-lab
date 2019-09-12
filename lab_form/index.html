@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://use.fontawesome.com/c332b99f13.js"></script>
-  <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/c332b99f13.js"></script>
+    <title>Form</title>
 </head>
 
 <body>
-        <form>
-                <header>
-                  <h1>Log in</h1>
-                  <div class="social_icons">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href="https://aboutme.google.com" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
-                  </div>
-                </header>
-                <main>
-                  <div class="login_form">
-                    <input type="email" placeholder="Your email">
-                    <input type="password" placeholder="Your password"><br>
-                    <a href="#">Forgot <strong>Password?</strong></a>
-                  </div>
-                  <div class="submit">
-                    <input type="submit" value="log in">
-                  </div>
-                    <a href="#" class="chek_in">Don't have an acount? <strong>Sing up</strong></a>
-                </main>
-              </form>
+    <form>
+        <header>
+            <h1>Log in</h1>
+            <div class="social_icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://aboutme.google.com" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+            </div>
+        </header>
+        <main>
+            <div class="login_form">
+                <input type="email" required><label for="email">Your email</label>
+            </div>
+            <div class="login_form">
+                <input type="password" required><label for="password">Your password</label>
+                <a href="#">Forgot <strong>Password?</strong></a>
+            </div>
+            <div class="submit">
+                <input type="submit" value="log in">
+            </div>
+            <a href="#" class="chek_in">Don't have an acount? <strong>Sing up</strong></a>
+        </main>
+    </form>
 </body>
+
 </html>
