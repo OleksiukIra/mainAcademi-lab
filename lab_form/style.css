@@ -60,7 +60,7 @@ main {
 }
 .login_form input:focus + label,
 .login_form input:valid + label{
-    top: -30px;
+    top: -20px;
 }
 .login_form a{
     text-decoration: none;
