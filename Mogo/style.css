@@ -145,10 +145,11 @@ nav{
 }
 .work_description{
     width: 100%;
-    min-height: 750px;
+    max-height: 750px;
     display: flex;
     justify-content: center;
     padding: 90px 0;
+    margin-top: 40px;
 }
 .main_content{
     width: 100%;
@@ -191,13 +192,14 @@ nav{
     max-width: 1220px;
 }
 .img_about{
+    width: 380px;
     margin: 30px;
     transition:trannsform .1s linear;
     position: relative;
 }
 .img_about:first-child{
     transform: translate3d(-10px, -10px, 0);
-    box-shadow: 10px 10px #95e1d3;
+    box-shadow: 9px 9px #95e1d3;
 }
 .about_text{
     width: 100%;
@@ -211,6 +213,33 @@ nav{
     left: 0;
     z-index: 2;
     transform: translate3d(0, -50% 0);
+}
+.numbers{
+    background-color: #95e1d3;
+}
+.number_statistic{
+    display: flex;
+
+}
+.number_item{
+    flex: 1 1 0;
+    border-left: 1px solid #b5eae0;
+    text-align: center;
+    color: white;
+    padding: 88px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.number_item:last-child{
+    border-right: 1px solid #b5eae0;
+}
+.number{
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.number_text{
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .footer{
