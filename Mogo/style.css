@@ -148,7 +148,6 @@ nav{
     display: flex;
     justify-content: center;
     padding: 90px 0;
-    margin-top: 40px;
 }
 .main_content{
     width: 100%;
@@ -185,14 +184,11 @@ nav{
 }
 .content_img{
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    width: 100%;
-    max-width: 1220px;
+    justify-content: space-between;
+    margin: 100px 0 110px;
 }
 .img_about{
-    width: 380px;
-    margin: 30px;
+    display: inline-flex;
     transition:trannsform .1s linear;
     position: relative;
 }
@@ -208,10 +204,9 @@ nav{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    top: 40%;
-    left: 0;
+    top: 45%;
+    left: 155px;
     z-index: 2;
-    transform: translate3d(0, -50% 0);
 }
 .numbers{
     background-color: #95e1d3;
@@ -451,6 +446,210 @@ nav{
     top: 34px;
     z-index: 1;
 }
+.team{
+    margin-top: 90px;
+}
+.team_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.team_item{
+    display: inline-flex;
+    margin-right: 30px;
+}
+.taem_item:first-child{
+    margin-bottom: 10px;
+    box-shadow: 10px 10px #95e1d3;
+    position: relative;
+}
+.team_social{
+    position: absolute;
+    background-color: #fce38a;
+    top: 206px;
+    left: 80px;
+}
+.team_social-icons{
+    background-color: #fce38a;
+    border-right: 1px solid #ff9999;
+    text-decoration: none;
+    color: #f38181;
+    display: inline-block;
+    font-size: 28px;
+    width: 55px;
+    transition: background .1s linear, color .1s linear;
+}
+.team_social-icons i{
+    padding: 15px;
+}
+.team_social-icons:hover{
+    background-color: #f38181;
+    color: white;
+    border-right: none;
+
+}
+.team_social-icons:last-child{
+    border-right: none;
+}
+.team_position{
+    position: relative;
+
+}
+.position-title{
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   text-transform: uppercase;
+   color: #4d4d4d;
+}
+.position-suptitle{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: #cccccc;
+}
+.logos{
+    background-color: #f8f8f8;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.logos_emblems{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.emblems{
+    padding: 70px 55px;
+}
+.works{
+    display: flex;
+}
+.works_col{
+    flex: 1 1 0;
+}
+.works_item{
+    position: relative;
+    background: linear-gradient(to bottom,#f59f8c, #e6ca80);
+}
+.works_item:hover .works_photo{
+    opacity: .1;
+}
+.works_item:hover .works_info{
+    opacity: 1;
+}
+.works_photo{
+    transition: opacity .2s linear;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.works_info{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+    opacity: 0;
+}
+.works_titel{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.works_text{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+}
+.reviews{
+    margin-top: 95px;
+}
+.reviews_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: -14px;
+    left: -30px;
+    z-index: 1;
+}
+.reviews_text{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    color: #d7d7d7;
+    line-height: 1.2;
+    padding-top: 40px;
+}
+.people_say{
+    margin-top: 130px;
+    background: url(img/bg/Layer\ 53.jpg) no-repeat center;
+}
+.clients{
+    display: flex;
+    flex-wrap:wrap;
+}
+.clients_item{
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 70px;
+
+}
+.clients_photo{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    z-index: 1;
+    border-radius: 50%;
+}
+.clients_name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 5px;
+}
+.clients_position{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: #848484;
+}
+.clients_text{
+    font-size: 15px;
+    color: #999999;
+}
+.clients_text::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 20px 0;
+}
+/*.team-title{
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 155px;
+    z-index: 2;
+}*/
 .footer{
     width: 100%;
     max-width: 1200px;
