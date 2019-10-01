@@ -1,0 +1,135 @@
+    @color: #364048;
+    @basecolor: white;
+    @hover:#2ab5b3;
+.font{
+    font-family: 'Raleway', sans-serif;
+}
+.menu [type="checkbox"]{
+    display: none;
+}
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.header_wrapper{
+    background-color: #242b2e;
+}
+.header_logo{
+    width: 100%;
+    .font;
+    color: @color;
+    font-size: 47px;
+    padding: 30px 60px;
+    background-color: @basecolor;
+}
+.creative{
+    margin-top: -34px;
+    margin-left: 30px;
+}
+.menu label{
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: @basecolor;
+    font-size: 18px;
+    .font;
+    padding: 15px 40px;
+    position: relative;
+.fas{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}    
+    }
+@media all and(max-width:500px){
+.menu{
+    overflow: hidden;
+}
+.header_list{
+    display: none;
+    }
+.menu label{
+    display: block;
+    }
+}
+input:checked ~ .header_list{
+    display: block;
+}
+.header_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+li{
+    padding: 24px;
+    text-align: right;
+    border-bottom: 2px solid #333b3f;
+    background-color: #2f373b; 
+    }
+a{
+    text-decoration: none;
+    color: @basecolor;
+    .font;
+    text-transform: uppercase;
+    }
+}
+.header_list li:hover{
+    background-color: @hover;
+}
+.content{
+    display: flex;
+}
+.content_colum{
+    flex: 1 1 0;
+}
+.content_item{
+    position: relative;
+    background: @hover;
+}
+.content_item:hover .content_photo{
+    opacity: .1;
+}
+.content_item:hover .content_info{
+    opacity: 1;
+}
+.content_photo{
+    transition: opacity .2s linear;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.content_info{
+    width: 100%;
+    text-align: center;
+    color: @basecolor;
+    position: absolute;
+    .font;
+    top: 130px;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+    opacity: 0;
+.content_titel{
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.content_text{
+    font-size: 12px;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+}
+.content_text::after{
+    content:'';
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 1px;
+    background-color: @basecolor;
+    top: 50px;
+    left: 125px;
+}
