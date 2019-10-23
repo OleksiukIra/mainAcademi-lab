@@ -11,6 +11,7 @@ body{
     text-transform: uppercase;
     color: @textcolor;
     text-align: center;
+    font-weight: bold;
 }
 .font_text{
     font-family: 'Open Sans', sans-serif;
@@ -29,12 +30,16 @@ body{
     margin: 0 auto;
 }
 //HEADER
+.toggleMenu{
+    display: none;
+}
 .header{
-    height: 100vh;
     min-height: 890px;
     background: url(img/bg/Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).jpg) no-repeat center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
+    z-index: 2;
 &::before{
     content: '';
     position: absolute;
@@ -45,7 +50,7 @@ body{
     width: 0;
     height: 0;
     top: 612px;
-    z-index: 2;
+    z-index: 3;
 }
 &::after{
     content: '';
@@ -58,7 +63,7 @@ body{
     top: 700px;
     left: 580px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 }
 .header__main{
@@ -125,9 +130,9 @@ label{
     margin-bottom: 0;
 }
 .header__text{
- .font_text;
- text-align: center;
- padding-right: 66px;
+    .font_text;
+    text-align: center;
+    padding-right: 66px;
 }
 .header__btn{
     .btn;
@@ -195,7 +200,6 @@ label{
 }
 .content_text.first{
     padding-top: 40px;
-   
 }
 }
 .main_content_title{
@@ -242,11 +246,13 @@ label{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 350px;
+    padding-top: 270px;
+    height: 1100px;
 .them_item{
     padding-right: 20px;
+    width: 35%;
 &.col-2{
-    align-self: flex-end
+    align-self: center;
 }
 .them_title{
     .font;
@@ -262,6 +268,10 @@ label{
 }
 }
 }
+.them_wrapper.second{
+    align-items: flex-end;
+    height: 1080px;
+}
 //FINDE
 .finde{
     position: relative;
@@ -275,6 +285,7 @@ label{
     position: relative;
 .finde_img{
     padding-right: 20px;
+    width: 35%;
 }
 }
 .finde_title{
@@ -317,16 +328,18 @@ label{
     justify-content: space-between;
     margin-top: 150px;
 }
+.enjoy_items{
+    width: 50%;
+}
 .enjoy_items.first{
     background-color: #74ccc4;
-    max-height: 373px;
-    margin-right: 10px;
+    width: 49%;
 }
 .enjoy_title{
     .font;
     font-size: 55px;
-    padding-top: 100px;
-    padding-bottom: 35px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 .enjoy_text{
     .font_text;
@@ -356,26 +369,28 @@ label{
     justify-content: space-around;
     align-items: flex-end;
     padding-top: 120px;
-
 .contacts{
     width: 35%;
 .contacts_title{
     .font;
     font-size: 25px;
-    text-align: start;
     padding-bottom: 20px;
 }
 .contacts_text{
     .font_text;
     font-size: 18px;
-    
 }
 }
 .about{
     display: flex;
-
+    align-items: center;
+.about_title{
+    align-self: flex-end;
+}   
 .about_text{
     .font;
+    font-size: 20px;
+    padding-top: 12px;
 }
 .about_item{
     padding: 15px 15px 0px 15px;
@@ -404,4 +419,59 @@ label{
     display: block;
     top: -300px;
     right:1px;
+}
+//@MEDIA
+@media screen and (max-width: 1000px) {
+    .content_img, .content_imgcirkl, .content_img_vector, .finde_img_vector, .finde_img_smart, .content_img_group, .enjoy_img_absolute, .footer_img, .footer_img_group{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+.header__title, .main_content_title, .them_title, .enjoy_title{
+    font-size: 25px;
+    }
+.about_text, .header__text, .content_text, .enjoy_text, .them_text, .contacts_text{
+    font-size: 15px;
+    }
+.main_content_text, .enjoy_wrapper{
+    flex-wrap: wrap;
+    width: 90%;
+}
+.header::before, &::after{
+    display: none;
+}
+.them{
+    clip-path: none;
+    width: 100%;
+    height: inherit;
+}
+.them_wrapper, .finde_wrapper, .footer_wrapper{
+    flex-direction: column;
+    padding-top:0;
+    align-items: center;
+    justify-content: center;
+}
+.toggleMenu{
+    display: block;
+}
+.navigation_list .navigation__link {
+    display: none;
+}
+.header__main{
+    width: 80%;
+}
+.header__btn, .content_btn{
+    width: 100px;
+    height: 20px;
+.btn__link, .btn_link{
+    font-size: 8px;
+    }
+}
+
+.finde_wrapper{
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 }
