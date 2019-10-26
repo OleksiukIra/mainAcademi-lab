@@ -235,9 +235,7 @@ label{
 //THEM
 .them{
     position: relative;
-    margin-top: 150px;
-    width: 98.7vw;
-    height: 100vw;
+    margin-top: 175px;
     clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%);
     background: #74ccc4;
     z-index: 4;
@@ -247,12 +245,17 @@ label{
     flex-direction: row;
     align-items: flex-start;
     padding-top: 270px;
-    height: 1100px;
+    height: 180vh;
+    padding-bottom: 75px;
+
 .them_item{
     padding-right: 20px;
     width: 35%;
 &.col-2{
     align-self: center;
+}
+.them_img{
+    width: 100%;
 }
 .them_title{
     .font;
@@ -270,7 +273,8 @@ label{
 }
 .them_wrapper.second{
     align-items: flex-end;
-    height: 1080px;
+    padding-top: 90px;
+    padding-bottom: 220px;
 }
 //FINDE
 .finde{
@@ -286,6 +290,9 @@ label{
 .finde_img{
     padding-right: 20px;
     width: 35%;
+img{
+    width: 100%;
+}
 }
 }
 .finde_title{
@@ -331,9 +338,13 @@ label{
 .enjoy_items{
     width: 50%;
 }
+.enjoy_img{
+    width: 100%;
+}
 .enjoy_items.first{
     background-color: #74ccc4;
     width: 49%;
+    max-height: 94vh;
 }
 .enjoy_title{
     .font;
@@ -354,10 +365,13 @@ label{
     right: 1px;
 }
 .header.second{
-    position: relative;
-    margin-top: 100px ;
-    background: url(img/bg/Place\ Your\ Design\ Her4e\ \(Double\ Click\ to\ Edit\).jpg);
+    margin-top: 100px;
+    min-height: 890px;
+    background: url(img/bg/Place\ Your\ Design\ Her4e\ \(Double\ Click\ to\ Edit\).jpg) no-repeat center;
     background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
 }
 //FOOTER
 .footer{
@@ -425,9 +439,12 @@ label{
     .content_img, .content_imgcirkl, .content_img_vector, .finde_img_vector, .finde_img_smart, .content_img_group, .enjoy_img_absolute, .footer_img, .footer_img_group{
         display: none;
     }
+body{
+    z-index: none;
+}
 }
 @media screen and (max-width: 900px){
-.header__title, .main_content_title, .them_title, .enjoy_title{
+.them_title, .header__title, .main_content_title, .enjoy_title,{
     font-size: 25px;
     }
 .about_text, .header__text, .content_text, .enjoy_text, .them_text, .contacts_text{
@@ -437,6 +454,9 @@ label{
     flex-wrap: wrap;
     width: 90%;
 }
+.finde_img{
+    width: 100%;
+}
 .header::before, &::after{
     display: none;
 }
@@ -445,11 +465,11 @@ label{
     width: 100%;
     height: inherit;
 }
-.them_wrapper, .finde_wrapper, .footer_wrapper{
+.them_wrapper, .finde_wrapper, .enjoy_wrapper{
     flex-direction: column;
-    padding-top:0;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .toggleMenu{
     display: block;
@@ -474,4 +494,18 @@ label{
     justify-content: center;
     align-items: center;
 }
+}
+@media screen and (max-width: 500px){
+    .them_title, .header__title, .main_content_title, .enjoy_title,{
+        font-size: 15px;
+        }
+    .about_text, .header__text, .content_text, .enjoy_text, .them_text, .contacts_text{
+        font-size: 10px;
+        }
+    .main_content_text{
+        flex-direction: column;
+    }
+    .them_wrapper{
+        padding-top: 50px;
+    }
 }

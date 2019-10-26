@@ -1,8 +1,17 @@
-var a=12;
-var b=6;
-if (a % b) {
-    console.log(a+ 'не кратно' +b)   
+
+var numberA = prompt('Введите первое число');
+var numberB = prompt('Введите второе число');
+var numberCheckResult = 'Неверно';
+
+if (numberA > 0 && numberA < 20 
+    || numberB >= 8 && numberB < 15){
+    numberCheckResult = 'Верно';
 }
-else{
-    console.log(a 'кратно' b)
-}
+
+document.
+    getElementsByClassName('js-user-numbers')[0]
+    .innerText = numberA + ', ' + numberB;
+
+document
+    .getElementsByClassName('js-nuber-check-result')[0]
+    .innerText = numberCheckResult;
