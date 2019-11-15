@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgba(14, 14, 158, 0.678);
+}
+@basecolor: white;
+@maincolor:rgba(43, 43, 129, 0.678);
+.text{
+    font-size: 20px;
+    color: @basecolor;  
+    text-align: center;
+    padding: 5px 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 40%;
+    margin: 40px auto;
+    border: 10px solid rgba(164, 164, 247, 0.678);
+    background-color: @maincolor;
+    display: flex;
+    justify-content: center;
+.form_header{
+    color: @basecolor;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.form_text{
+    .text;
+}
+.avtorise{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.input_wrapper{
+    position: relative;
+}
+label{
+    padding-top: 2px;
+    color: @maincolor;
+    font-size: 14px;
+    transition: .5s;
+}
+input{
+    height: 80%;
+    min-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-top: 15px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid @maincolor;
+}
+.focus-input100{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+&::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+}
+&::after{
+    font-size: 18px;
+    color: @maincolor;
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    padding-left: 5px;
+    transition: all 0.4s;
+}
+}
+.btn{
+    margin: 35px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    min-width: 120px;
+    font-size: 15px;
+    color: @maincolor;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+
+}
+}
+
